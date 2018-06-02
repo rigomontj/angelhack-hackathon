@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Carottes</h1>
+<h1>Products</h1>
 
 <table>
   <thead>
@@ -23,6 +23,7 @@
         <td><%= product.profile_pic %></td>
         <td><%= product.owner_name %></td>
         <td><%= product.description %></td>
+        <td><%= link_to "buy", product %></td>
         <td><%= product.price_theoric %></td>
         <td><%= product.price_corrected %></td>
         <td><%= product.impact %></td>

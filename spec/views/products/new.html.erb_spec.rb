@@ -7,6 +7,7 @@ RSpec.describe "products/new", type: :view do
       :profile_pic => "MyText",
       :owner_name => "MyText",
       :description => "MyText",
+      :buy_button => "MyText",
       :price_theoric => "MyText",
       :price_corrected => "MyText",
       :impact => "MyText"
@@ -25,6 +26,8 @@ RSpec.describe "products/new", type: :view do
       assert_select "textarea[name=?]", "product[owner_name]"
 
       assert_select "textarea[name=?]", "product[description]"
+
+      assert_select "textarea[name=?]", "product[buy_button]"
 
       assert_select "textarea[name=?]", "product[price_theoric]"
 

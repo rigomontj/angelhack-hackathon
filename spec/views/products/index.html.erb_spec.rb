@@ -8,6 +8,7 @@ RSpec.describe "products/index", type: :view do
         :profile_pic => "MyText",
         :owner_name => "MyText",
         :description => "MyText",
+        :buy_button => "MyText",
         :price_theoric => "MyText",
         :price_corrected => "MyText",
         :impact => "MyText"
@@ -17,6 +18,7 @@ RSpec.describe "products/index", type: :view do
         :profile_pic => "MyText",
         :owner_name => "MyText",
         :description => "MyText",
+        :buy_button => "MyText",
         :price_theoric => "MyText",
         :price_corrected => "MyText",
         :impact => "MyText"
@@ -26,6 +28,7 @@ RSpec.describe "products/index", type: :view do
 
   it "renders a list of products" do
     render
+    assert_select "tr>td", :text => "MyText".to_s, :count => 2
     assert_select "tr>td", :text => "MyText".to_s, :count => 2
     assert_select "tr>td", :text => "MyText".to_s, :count => 2
     assert_select "tr>td", :text => "MyText".to_s, :count => 2

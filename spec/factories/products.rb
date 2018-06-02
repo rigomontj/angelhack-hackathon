@@ -4,6 +4,7 @@ FactoryBot.define do
     profile_pic "MyText"
     owner_name "MyText"
     description "MyText"
+    buy_button "MyText"
     price_theoric "MyText"
     price_corrected "MyText"
     impact "MyText"
