@@ -10,4 +10,19 @@
 
 .card {
     margin: 1em 1em 0 0;
+    max-height: 240px;
+    img {
+        object-position: center;
+        height: 75%;
+        object-fit: cover;
+    }
+    h5 {
+        text-align: center;
+        font-size: 3vh;
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+        height: 100%;
+    }
 }
