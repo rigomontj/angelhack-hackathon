@@ -8,5 +8,7 @@ DEPLACEMENT ALGO:
 a = Geokit::Geocoders::GoogleGeocoder.geocode '#{address string}'
 b = Geokit::Geocoders::GoogleGeocoder.geocode '#{address string2}'
 
+@distance = ((current_user.address_gps).distance_to(@product.seller.address_gps) * 1.6)
+
 distance_in_miles = a.distance_to(b)
 distance_in_kms = distance_in_miles * 1.61

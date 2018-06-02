@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
 
 # authentification
+gem 'yarn'
 gem 'geokit'
 gem 'devise'
+gem 'digest-sha3'
 # gem 'pundit'
 
 gem 'rails'
@@ -35,6 +37,7 @@ group :development do
   gem 'web-console'
   gem 'listen'
   gem 'spring'
+  gem "rails_12factor"
   gem 'spring-watcher-listen'
 end
 
