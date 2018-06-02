@@ -1,4 +1,6 @@
-<h1>Shop#basket</h1>
-<p>Find me in app/views/shop/basket.html.erb</p>
-
-<% link_to "Acheter", :controller => :my_controller, :action => :index %>
+<% @products.each do |p| %>
+    <%= p.name %>
+    <%= p.price %>
+    <%= p.qty %>
+    <%= link_to 'Show', p %>
+<% end %>
