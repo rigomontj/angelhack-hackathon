@@ -9,7 +9,6 @@
       <th>Profile pic</th>
       <th>Owner name</th>
       <th>Description</th>
-      <th>Buy button</th>
       <th>Price theoric</th>
       <th>Price corrected</th>
       <th>Impact</th>
@@ -24,7 +23,7 @@
         <td><%= product.profile_pic %></td>
         <td><%= product.owner_name %></td>
         <td><%= product.description %></td>
-        <td><%= product.buy_button %></td>
+        <td><%= link_to "buy", product %></td>
         <td><%= product.price_theoric %></td>
         <td><%= product.price_corrected %></td>
         <td><%= product.impact %></td>
