@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 # authentification
 gem 'geokit'
 gem 'devise'
+gem 'digest-sha3'
 # gem 'pundit'
 
 gem 'rails'

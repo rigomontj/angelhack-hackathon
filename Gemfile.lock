@@ -279,6 +279,7 @@ DEPENDENCIES
   coffee-rails
   database_cleaner
   devise
+  digest-sha3
   eth
   ethereum.rb
   factory_bot_rails
