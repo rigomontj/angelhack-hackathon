@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'shop/grid'
+
+  get 'shop/basket'
+
   get 'onboardings/index'
   get 'welcome/index'
 
