@@ -2,10 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.container{
+.item-wraper{
 	display: flex;
-	justify-content:center;
+	flex-direction: row;
+	justify-content: center;	
+	flex-wrap: wrap;
 }
-.card{
+.item{
 
 }
