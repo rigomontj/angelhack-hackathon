@@ -21,7 +21,7 @@
     <% @products.each do |product| %>
       <tr>
         <td><%= product.distance %></td>
-        <td><%= product.profile_pic %></td>
+        <td><%= image_tag product.profile_pic, size: "160x160" %></td>
         <td><%= product.owner_name %></td>
         <td><%= product.description %></td>
         <td><%= link_to "buy", product %></td>
