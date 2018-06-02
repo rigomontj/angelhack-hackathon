@@ -7,6 +7,7 @@ RSpec.describe "products/show", type: :view do
       :profile_pic => "MyText",
       :owner_name => "MyText",
       :description => "MyText",
+      :buy_button => "MyText",
       :price_theoric => "MyText",
       :price_corrected => "MyText",
       :impact => "MyText"
@@ -15,6 +16,7 @@ RSpec.describe "products/show", type: :view do
 
   it "renders attributes in <p>" do
     render
+    expect(rendered).to match(/MyText/)
     expect(rendered).to match(/MyText/)
     expect(rendered).to match(/MyText/)
     expect(rendered).to match(/MyText/)
