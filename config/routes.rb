@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
+  get 'onboardings/index'
 
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  devise_for :sellers
+  devise_for :users
+  root 'onboardings#index'
 end
