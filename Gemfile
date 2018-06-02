@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 # authentification
+gem 'geokit'
 gem 'devise'
 # gem 'pundit'
 
