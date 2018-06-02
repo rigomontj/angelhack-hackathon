@@ -1,18 +1,38 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @product.name %>
+  <strong>Distance:</strong>
+  <%= @product.distance %>
 </p>
 
 <p>
-  <strong>Price:</strong>
-  <%= @product.price %>
+  <strong>Profile pic:</strong>
+  <%= @product.profile_pic %>
 </p>
 
 <p>
-  <strong>Qty:</strong>
-  <%= @product.qty %>
+  <strong>Owner name:</strong>
+  <%= @product.owner_name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @product.description %>
+</p>
+
+<p>
+  <strong>Price theoric:</strong>
+  <%= @product.price_theoric %>
+</p>
+
+<p>
+  <strong>Price corrected:</strong>
+  <%= @product.price_corrected %>
+</p>
+
+<p>
+  <strong>Impact:</strong>
+  <%= @product.impact %>
 </p>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |

@@ -12,18 +12,38 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %>
-    <%= form.text_area :name, id: :product_name %>
+    <%= form.label :distance %>
+    <%= form.text_area :distance, id: :product_distance %>
   </div>
 
   <div class="field">
-    <%= form.label :price %>
-    <%= form.number_field :price, id: :product_price %>
+    <%= form.label :profile_pic %>
+    <%= form.text_area :profile_pic, id: :product_profile_pic %>
   </div>
 
   <div class="field">
-    <%= form.label :qty %>
-    <%= form.number_field :qty, id: :product_qty %>
+    <%= form.label :owner_name %>
+    <%= form.text_area :owner_name, id: :product_owner_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description, id: :product_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price_theoric %>
+    <%= form.text_area :price_theoric, id: :product_price_theoric %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price_corrected %>
+    <%= form.text_area :price_corrected, id: :product_price_corrected %>
+  </div>
+
+  <div class="field">
+    <%= form.label :impact %>
+    <%= form.text_area :impact, id: :product_impact %>
   </div>
 
   <div class="actions">

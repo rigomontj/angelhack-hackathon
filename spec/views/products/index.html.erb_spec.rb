@@ -4,14 +4,22 @@ RSpec.describe "products/index", type: :view do
   before(:each) do
     assign(:products, [
       Product.create!(
-        :name => "MyText",
-        :price => 2,
-        :qty => 3
+        :distance => "MyText",
+        :profile_pic => "MyText",
+        :owner_name => "MyText",
+        :description => "MyText",
+        :price_theoric => "MyText",
+        :price_corrected => "MyText",
+        :impact => "MyText"
       ),
       Product.create!(
-        :name => "MyText",
-        :price => 2,
-        :qty => 3
+        :distance => "MyText",
+        :profile_pic => "MyText",
+        :owner_name => "MyText",
+        :description => "MyText",
+        :price_theoric => "MyText",
+        :price_corrected => "MyText",
+        :impact => "MyText"
       )
     ])
   end
@@ -19,7 +27,11 @@ RSpec.describe "products/index", type: :view do
   it "renders a list of products" do
     render
     assert_select "tr>td", :text => "MyText".to_s, :count => 2
-    assert_select "tr>td", :text => 2.to_s, :count => 2
-    assert_select "tr>td", :text => 3.to_s, :count => 2
+    assert_select "tr>td", :text => "MyText".to_s, :count => 2
+    assert_select "tr>td", :text => "MyText".to_s, :count => 2
+    assert_select "tr>td", :text => "MyText".to_s, :count => 2
+    assert_select "tr>td", :text => "MyText".to_s, :count => 2
+    assert_select "tr>td", :text => "MyText".to_s, :count => 2
+    assert_select "tr>td", :text => "MyText".to_s, :count => 2
   end
 end
