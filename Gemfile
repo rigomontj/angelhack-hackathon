@@ -15,6 +15,7 @@ gem 'turbolinks'
 gem 'jbuilder'
 gem 'bootstrap'
 gem 'ethereum.rb'
+gem 'eth'
 
 group :development, :test do
   gem 'sqlite3'
