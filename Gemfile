@@ -37,6 +37,7 @@ group :development do
   gem 'web-console'
   gem 'listen'
   gem 'spring'
+  gem "rails_12factor"
   gem 'spring-watcher-listen'
 end
 
