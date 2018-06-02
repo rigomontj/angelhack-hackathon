@@ -1,0 +1,12 @@
+Foam: geolocalisation blockchain
+
+DEPLACEMENT ALGO:
+
+??? 15 centimes d'Euro PAR 100 kilometres
+??? 150g de Co2 PAR kilometre
+
+a = Geokit::Geocoders::GoogleGeocoder.geocode '#{address string}'
+b = Geokit::Geocoders::GoogleGeocoder.geocode '#{address string2}'
+
+distance_in_miles = a.distance_to(b)
+distance_in_kms = distance_in_miles * 1.61
