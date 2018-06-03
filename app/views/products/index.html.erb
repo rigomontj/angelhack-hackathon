@@ -45,7 +45,7 @@
         <!-- <img src="https://slack-imgs.com/?c=1&url=https%3A%2F%2Fcdn2.regie-agricole.com%2Fulf%2FTNM_Biblio%2Ffiche_124476%2Ffiches_2017-miss-agri-1e-dauphine-marina-estrade-photo-du-concours.jpg" alt=""> -->
       </div>
       <div class="sub-item">
-        <p class="name"><%= product.owner_name %> <span class="distance"><%= product.distance %></span></p>
+        <p class="name"><%= product.owner_name %> <span class="distance"><i class="fas fa-map-marker-alt"></i> <%= product.distance %></span></p>
         <p><%= product.description %></p>
       </div>
     </div>
@@ -56,7 +56,7 @@
     </div>
     <div class="item big-price"><%= product.price_corrected %></div> 
     <div class="item price"><%= product.price_theoric %></div>
-    <div class="item"><%= product.impact %></div>
+    <div class="item"><i class="fas fa-road"></i> <%= product.impact %></div>
 </div>
 <% end %>
 
