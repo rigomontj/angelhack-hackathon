@@ -2,4 +2,45 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-background-color: red;
+.gd-container {
+	// background-color: #BBBBFF;
+	padding: 3em;
+	display: grid;
+	grid-template-columns: 50% 15% 15% 10% 10%;
+	.item{
+		border: black 1px solid;
+		place-self: center;
+	}
+	.perso{
+		background-color: #CCC;
+		border: black 1px dashed;
+		display: flex;
+		flex-direction:row;
+		.sub-item{
+			place-self: center;
+			p{
+				margin: 0;
+			}
+			.name{
+				font-family: helvetica;
+				font-size: 1.5em;
+				font-weight: bolder;
+				.distance{
+					font-size: .6em;
+					color: #A3A3A3;
+				}
+			}
+			
+			img{
+				height: 7em;
+			    width: 7em;
+			    -o-object-fit: cover;
+			    object-fit: cover;
+			    border-radius: 50%;
+			}
+		}
+	}
+	.buy{
+		background-color: red;
+	}
+}
