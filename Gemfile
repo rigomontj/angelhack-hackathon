@@ -16,8 +16,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
 gem 'bootstrap'
-gem 'ethereum.rb'
-gem 'eth'
+gem 'ethereum'
 
 group :development, :test do
   gem 'sqlite3'
