@@ -1,3 +1,7 @@
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+
 <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
@@ -22,7 +26,7 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <h1 class="brand-heading">Organicoin</h1>
-                        <p class="intro-text">We disrupt of the food industry by making the bridge between local producers and customers.</p>
+                        <p class="intro-text">We disrupt the food industry by connecting local food-growers and their customers.</p>
                         <a href="#go" class="btn btn-circle js-scroll-trigger">
                 <i class="fa fa-angle-double-down animated"></i>
               </a>
@@ -41,7 +45,8 @@
                             <i class="icon-screen-desktop m-auto text-primary"></i>
                         </div>
                         <h3>Transparency by design</h3>
-                        <p class="lead mb-0">We remove food industry middle men and allow customers to benefit from better prices for organic food grown locally.</p>
+                        <p><i class="fas fa-eye fa-3x"></i></p>
+                        <p class="lead mb-0">By using the latest blockchain technology, we ensure absolute user control and transaction transparency.</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -49,8 +54,9 @@
                         <div class="features-icons-icon d-flex">
                             <i class="icon-layers m-auto text-primary"></i>
                         </div>
-                        <h3>Fairest prices</h3>
-                        <p class="lead mb-0">We support local producers by allowing them sell directly their products to customers at fairest prices.</p>
+                        <h3>Fairest</br>prices</h3>
+                        <p><i class="fas fa-balance-scale fa-3x"></i></p>
+                        <p class="lead mb-0">We cut off expensive and toxic middlemen to allow for better pricing and quality.</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -58,8 +64,9 @@
                         <div class="features-icons-icon d-flex">
                             <i class="icon-check m-auto text-primary"></i>
                         </div>
-                        <h3>Environmental <br>& social impact</h3>
-                        <p class="lead mb-0">We are environmental obsessed. We integrated algorithms that include the environmental and social impacts on prices while reducing them for customers.</p>
+                        <h3>Environmental</br>& social impact</h3>
+                        <p><i class="fas fa-leaf fa-3x"></i></p>
+                        <p class="lead mb-0">We are environmentally and socially engaged: making a positive impact, while still being advantageous for the customer.</p>
                     </div>
                 </div>
             </div>
@@ -70,7 +77,8 @@
         <div class="container">
             <div class="row">
               <div class="col-12 ">
-                <button type="button" class="btn btn-primary btn-lg">Make an impact</button>
+        <!-- <button type="button" >Make an impact</button> -->
+        <%= link_to 'Make an impact', shop_grid_path , :class => 'btn btn-primary btn-lg'%>
               </div> 
             </div>
         </div>

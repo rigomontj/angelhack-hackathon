@@ -4,7 +4,6 @@ source 'https://rubygems.org'
 gem 'yarn'
 gem 'geokit'
 gem 'devise'
-gem 'digest-sha3'
 # gem 'pundit'
 
 gem 'rails'
@@ -16,8 +15,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
 gem 'bootstrap'
-gem 'ethereum.rb'
-gem 'eth'
+gem 'ethereum'
 
 group :development, :test do
   gem 'sqlite3'
