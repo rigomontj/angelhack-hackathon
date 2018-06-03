@@ -2,7 +2,7 @@
 
 <h1>Carottes</h1>
 
-<table>
+<!-- <table>
   <thead>
     <tr>
       <th>Distance</th>
@@ -20,37 +20,45 @@
   <tbody>
     <% @products.each do |product| %>
       <tr>
-        <td><%= product.distance %></td>
-        <td><%= product.profile_pic %></td>
-        <td><%= product.owner_name %></td>
-        <td><%= product.description %></td>
-        <td><%= link_to "buy", product %></td>
-        <td><%= product.price_theoric %></td>
-        <td><%= product.price_corrected %></td>
-        <td><%= product.impact %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td>  <%= product.distance %></td>
+        <td>  <%= image_tag product.profile_pic %></td>
+        <td>  <%= product.owner_name %></td>
+        <td>  <%= product.description %></td>
+        <td>  <%= link_to "buy", product %></td>
+        <td>  <%= product.price_theoric %></td>
+        <td>  <%= product.price_corrected %></td>
+        <td>  <%= product.impact %></td>
+        <td>  <%= link_to 'Show', product %></td>
+        <td>  <%= link_to 'Edit', edit_product_path(product) %></td>
+        <td>  <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
-</table>
+</table> -->
+
 <!-- HERE COMES MY GRID LINE TO REPEAT -->
+<% @products.each do |product| %>
   <div class="gd-container">
     <div class="item perso">
       <div class="sub-item">
-        <img src="https://slack-imgs.com/?c=1&url=https%3A%2F%2Fcdn2.regie-agricole.com%2Fulf%2FTNM_Biblio%2Ffiche_124476%2Ffiches_2017-miss-agri-1e-dauphine-marina-estrade-photo-du-concours.jpg" alt="">
+        <%= image_tag product.profile_pic %>
+        <!-- <img src="https://slack-imgs.com/?c=1&url=https%3A%2F%2Fcdn2.regie-agricole.com%2Fulf%2FTNM_Biblio%2Ffiche_124476%2Ffiches_2017-miss-agri-1e-dauphine-marina-estrade-photo-du-concours.jpg" alt=""> -->
       </div>
       <div class="sub-item">
-        <p class="name">Claudine <span class="distance">à 10 km</span></p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, obcaecati harum nostrum non doloribus veniam cum, asperiores debitis possimus tenetur mollitia quod !</p>
+        <p class="name"><%= product.owner_name %> <span class="distance"><%= product.distance %></span></p>
+        <p><%= product.description %></p>
       </div>
     </div>
-    <div class="item buy">BUY</div>
-    <div class="item">1er Prix</div> 
-    <div class="item">2e Prix</div>
-    <div class="item">Impacts</div>
+    <div class="item buy">
+      <%= link_to product do%>
+        <i class="fas fa-shopping-basket fit-sz"></i>
+      <% end %>
+    </div>
+    <div class="item big-price"><%= product.price_corrected %></div> 
+    <div class="item price"><%= product.price_theoric %></div>
+    <div class="item"><%= product.impact %></div>
 </div>
+<% end %>
 
 <!-- END OF THE GRID LINE -->
 <br>

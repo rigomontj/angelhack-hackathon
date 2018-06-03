@@ -4,16 +4,17 @@
 
 .gd-container {
 	// background-color: #BBBBFF;
-	padding: 3em;
+	padding: 1.3em 4em;
 	display: grid;
 	grid-template-columns: 50% 15% 15% 10% 10%;
 	.item{
-		border: black 1px solid;
+		// border: black 1px solid;
 		place-self: center;
 	}
 	.perso{
 		background-color: #CCC;
-		border: black 1px dashed;
+		border-radius: 4px;
+		padding: .8em;
 		display: flex;
 		flex-direction:row;
 		.sub-item{
@@ -30,17 +31,47 @@
 					color: #A3A3A3;
 				}
 			}
-			
 			img{
 				height: 7em;
 			    width: 7em;
 			    -o-object-fit: cover;
 			    object-fit: cover;
 			    border-radius: 50%;
+			    margin-right: 1em;
 			}
 		}
 	}
 	.buy{
-		background-color: red;
+		background-color: #ed7207;
+		height: 6.5em;
+	    width: 6.5em;
+	    border-radius: 50%;
+	    font-size: 1em;
+	    color: white;
+	    transition: all .3s ease;
+	    -webkit-box-shadow: 0px 7px 0px 0px rgba(179,83,38,1);
+		-moz-box-shadow: 0px 7px 0px 0px rgba(179,83,38,1);
+		box-shadow: 0px 7px 0px 0px rgba(179,83,38,1);
+	    &:hover{
+			margin-bottom: 5px;
+			-webkit-box-shadow: 0px 12px 0px 0px rgba(179,83,38,1);
+			-moz-box-shadow: 0px 12px 0px 0px rgba(179,83,38,1);
+			box-shadow: 0px 12px 0px 0px rgba(179,83,38,1);
+		}
+	    
+		i:before{
+			text-align: center;
+		    margin: .7em;
+		    line-height: 2.5em;
+		}
+		.fit-sz{
+	    font-size: 2.5em;
+	    background-color: rgb(179, 84, 22);
+	    color: transparent;
+	    text-shadow: 0px 2px 0px rgba(217, 184, 142, 0.8);
+	    -webkit-background-clip: text;
+	    -moz-background-clip: text;
+	    background-clip: text;
+		}
 	}
 }
