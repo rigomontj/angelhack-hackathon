@@ -4,7 +4,6 @@ source 'https://rubygems.org'
 gem 'yarn'
 gem 'geokit'
 gem 'devise'
-gem 'digest-sha3'
 # gem 'pundit'
 
 gem 'rails'
